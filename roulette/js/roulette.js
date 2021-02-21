@@ -16,13 +16,16 @@ $(function(){
     $(mawasu).on("click",function(){
 
         $(mawasu).css({transform: "scale(0.9)"});
-        $(mawasu).stop().css("opacity",0.5).css("filter","grayscale(0.9)").css("cursor","auto");
+        $(mawasu).css("opacity",0.5).css("filter","grayscale(0.9)").css("cursor","auto");
 
         if(flag==false){    
             rRotate=Math.random();
             rRotate=Math.floor(rRotate*10+1)*36+720;
             $(roulette).css({transition: "3s"});
             $(roulette).css({transform: "rotate("+rRotate+"deg)"});
+            $(mawasu).on("mouseover",function(){
+                $(mawasu).css({transform: "scale(0.9)"});
+            });
 
             setTimeout(function(){
                 $(result).css("display","block");
@@ -65,14 +68,18 @@ $(function(){
     
     $(rClear).click(function(){
         if(flag==true){
-            location.reload();
-            $(rClear).on("mouseover",function(){
-                $(rClear).css({transform: "scale(0.9)"});
+            $(roulette).css({transform: "rotate(0deg)"});
+            $(roulette).css({transition: "0s"});
+            $(mawasu).css("opacity",1).css("filter","grayscale(0)").css("cursor","pointer");
+            $(mawasu).on("mouseover",function(){
+                $(mawasu).css({transform: "scale(1)"});
             });
-            $(rClear).on("mouseout",function(){
-                $(rClear).css({transform: "scale(0.9)"});
-            });
-            flag==false;
+            $(mawasu).on("mouseout",function(){
+                $(mawasu).css({transform: "scale(0.9)"});
+            });           
+            $(rClear).css("opacity",0.5).css("filter","grayscale(0.9)").css("cursor","auto").css({transform: "scale(0.9)"});
+            flag=false;
+            console.log(flag);
         }
     });
 
