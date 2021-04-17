@@ -8,13 +8,13 @@
 <br><br>
 
 
-### ** MouseStalker01 **<br>
+### ** MouseStalker02 **<br>
 金銀のリングが2Dに回転するマウスストーカー。<br>
 【Demo】https://codepen.io/masuming/pen/vYyLzeK<br>
 <br><br>
 
 
-### ** MouseStalker01 **<br>
+### ** MouseStalker03 **<br>
 鼓動チックに広がる二重リングのマウスストーカー。<br>
 【Demo】https://codepen.io/masuming/pen/zYorJRQ<br>
 <br><br>
