@@ -1,5 +1,7 @@
+![js_index](https://user-images.githubusercontent.com/70561410/115106743-694ae880-9fa1-11eb-8a4f-d6c16b8cbb8d.png)<br><br>
+
 <p>Web製作に役立つJavaScriptのプラグインを数種開発いたしました。</p>
-<br><br><br>
+<br>
 
 
 ### ** MouseStalker01 **<br>
