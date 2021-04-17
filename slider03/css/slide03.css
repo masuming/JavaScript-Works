@@ -1,0 +1,290 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size:62.5%;
+    font-family: 'Heebo', 'Noto Sans JP',sans-serif; 
+    font-weight: 300;    
+}
+body {
+    position: relative;
+    font-weight: 300;
+    color: #333333;
+    font-size: 1.4rem;
+    position: relative;
+    overflow: hidden;
+    background: rgb(254,254,254);
+}
+img {
+    vertical-align: bottom;
+}
+a {
+    text-decoration: none;
+    color: rgb(34,34,34);
+}
+li {
+    list-style: none;
+}
+.wrapper {
+    position: relative;
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+h1 {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 30px 150px 0;
+
+}
+nav ul li {
+    text-align: center;    
+}
+nav ul li:not(:last-child) {
+    margin-right: 60px;
+}
+
+nav ul li a {
+    font-size: 1.1em;
+}
+main {
+    position: relative;
+    margin: auto;
+    height: 100%;
+}
+#slide {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    transform: translate(0,-50%);
+    overflow: hidden;
+}
+.row {
+    width: 80%;
+    transition: 1s;
+    max-width: 1400px;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    cursor: pointer;
+    /* animation-name: scalechange;
+    animation-duration:6.8s;
+    animation-iteration-count:infinite; */
+
+}
+/* @keyframes scalechange {
+    0% {
+        transform: translate(-50%,-50%) scale(1);   
+    
+    }
+    90% {
+        transform: translate(-50%,-50%) scale(1);        
+    }
+    100% {
+        transform: translate(-50%,-50%) scale(0.9); 
+      
+    }
+
+} */
+/* .pic {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+	top: 0;
+	left: 0;
+    display: none;
+} */
+.picbox,
+.msgbox {
+    width: 50%;
+    position: relative;
+    height: 100%;
+}
+.picbox ul,
+.msgbox ul {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+.picbox ul li ,
+.msgbox ul li {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    display: none;      
+}
+.pic {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    top: 0;
+	left: 0;
+ 
+    /* display: none; */
+}
+figure img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* .msg {
+    width: 50%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: none; 
+}*/
+.msgbox {
+
+    position: relative;
+}.msgbox ul li {
+    background: rgb(255,255,255);
+    box-shadow: 1px 4px 8px rgb(238, 238, 238);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.msgbox section {
+    width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 20px;
+
+
+}
+h2 {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    line-height: 1.1;
+}
+.txt {
+    margin-bottom: 30px;
+}
+.detail {
+    background: rgb(230,230,230);
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.detail a {
+    font-weight: 600;
+}
+#controlList {
+    position: absolute;
+    bottom: 50px;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#controlList #control {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+#controlList #control li {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.3);
+    display: block;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+#controlList #control li:not(:last-child) {
+    margin-right: 20px;
+}
+#backSlide {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50vh;
+    z-index: -1;
+
+}
+#backSlide ul,
+#backSlide li {
+    height: 100%;
+}
+#backSlide .back__pic {
+    width: 100%;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    transition: 0.2s;
+}
+#backSlide ul li:after {
+    background: url(../images/z1.png);
+    opacity: 0.2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+}
+
+@media screen and (max-width:800px){
+
+nav {
+    display: none;
+}
+.row {
+    display: block;
+    height: 80%;
+}
+.picbox, .msgbox {
+    width: 100%;
+}
+.picbox{
+    width: 100%;
+    height: 40%;
+}
+.msgbox {
+    width: 100%;
+    height: 60%;
+}
+}
+@media screen and (max-width: 600px) {
+    #controlList {
+        bottom: 150px;
+
+    }
+}
