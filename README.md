@@ -3,7 +3,7 @@
 
 
 ### ** MouseStalker01 **<br>
-<金銀のリングが2Dに回転するマウスストーカー。<br>
+金銀のリングが2Dに回転するマウスストーカー。<br>
 【Demo】https://codepen.io/masuming/pen/qBqbMxE<br>
 <br><br>
 
