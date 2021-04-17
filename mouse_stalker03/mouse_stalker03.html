@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+    <title>MasuDO | MouseStalker03</title>
+    <link rel="stylesheet" href="css/mouse_stalker03.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="robots" content="noindex">
+</head>
+<body>
+    <p id="mouse"></p>
+    <script>
+        let rx,ry;
+        let body=document.getElementsByTagName("body")[0];
+        let mouse=document.getElementById("mouse");
+        body.onmousemove=function(event) {
+            rx=event.clientX-40;
+            ry=event.clientY-40;
+            mouse.style.top=ry+"px";
+            mouse.style.left=rx+"px";
+        }
+
+	</script>
+</body>
+</html>
