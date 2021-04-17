@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    position: relative;
+
+}
+
+.wrapper {
+    position: relative;
+
+}
+li{
+    list-style: none;
+}
+
+#imgBox {
+	position: relative;
+	width: 100%;
+    height: 100vh;
+	margin: 0 auto;
+}
+
+#imglist li{
+
+	position: absolute;
+	top: 0;
+	left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#imglist li img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+	display: none;
+    animation-name: scalechange; 
+    animation-duration: 6.4s;
+    animation-iteration-count: infinite;
+    transform-origin: top left; 
+}
+#controlList {
+    position: absolute;
+    bottom: 50px;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#controlList #control {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+#controlList #control li {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.3);
+    display: block;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+#controlList #control li:not(:last-child) {
+    margin-right: 20px;
+}
+.scaleUp {
+    transform: translate(-50%,-50%) scale(1.2);
+    transition: 1s;
+}
+.scaleDown {
+    transform: translate(-50%,-50%) scale(1) !important;
+    transition: 1s;
+}
+@keyframes scalechange{
+    0% {
+        transform: scale(1.2) translate(-50%,-50%); 
+
+
+    }
+    3% {
+        transform: scale(1.2) translate(-50%,-50%); 
+
+
+    }
+    13% {
+        transform: scale(1) translate(-50%,-50%);         
+    }
+
+    94% {
+        transform: scale(1) translate(-50%,-50%); 
+   
+       
+    }
+    100% {
+        transform: scale(1.2) translate(-50%,-50%);  
+  
+      
+    }
+}
+
+
+@media screen and (max-width : 1000px) {
+
+#imgBox li img {
+    height: 120%;
+    width: auto;
+}
+}
+
+@media screen and (max-width : 600px) {
+
+#control li {
+    bottom: 150px;
+    position: relative;
+}
+#imglist li img {
+    animation-name: scalechangei;     
+}
+@keyframes scalechangei {
+    0% {
+        transform: scale(1.2) translate(-50%,-50%); 
+
+
+    }
+    2% {
+        transform: scale(1.2) translate(-50%,-50%); 
+
+
+    }
+    13% {
+        transform: scale(1) translate(-50%,-50%);         
+    }
+
+    98% {
+        transform: scale(1) translate(-50%,-50%); 
+   
+       
+    }
+    100% {
+        transform: scale(1.2) translate(-50%,-50%);  
+  
+      
+    }
+}
+}
