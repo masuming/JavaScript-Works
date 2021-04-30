@@ -8,15 +8,18 @@
 html {
     font:62.5% 'Heebo', 'Noto Sans JP',sans-serif;    
 }
+
 body {
 font-weight: 300;
 color: #333333;
 font-size: 1.6rem;
 position: relative;
 }
+
 .wrapper {
     overflow: hidden;
 }
+
 header {
     background-image: url(../images/lazy_header.png);
     background-position: top center;
@@ -27,8 +30,8 @@ header {
     box-sizing: border-box;
     height: calc(100vh - 140px);
     min-height: 545px;
-
 }
+
 h1 {
     font-family: 'Heebo', 'Noto Sans JP',sans-serif;
     font-weight: 800;
@@ -37,6 +40,7 @@ h1 {
     color: #11788f;
     padding-top: 7%;
 }
+
 nav {
     height: 40px;
     background: rgba(255, 255, 255, 0.9);
@@ -47,29 +51,34 @@ nav {
     width: 100%;
     box-shadow: 1px 1px 3px rgb(34,34,34);
 }
+
 nav ul {
     display: flex;
     justify-content: center;
 }
+
 nav ul li:not(:last-child) {
     margin-right: 30px;
 }
+
 li {
     list-style: none;
     padding-top: 5px;    
 }
+
 li a {
     text-decoration: none;
     color: #065364;
     font-size: 1.2em;
 }
+
 .page__intro {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto 100px;
     position: relative;
-
 }
+
 .header__introtle {
     font-size: 10rem;
     font-weight: 800;
@@ -78,6 +87,7 @@ li a {
     font-family: 'Heebo', 'Noto Sans JP',sans-serif;
     padding-top: 3%;
 }
+
 .header__introsubtle {
     font-size: 8rem;
     line-height: 1;
@@ -85,47 +95,56 @@ li a {
     color: #676c6e;
     font-family: 'Heebo', 'Noto Sans JP',sans-serif;
 }
+
 .header__introsubtle span {
     font-size: 5rem;
     font-weight: 900;
 }
+
 main{
     position: relative;
     max-width: 1000px;
     margin: 0 auto 150px;
     width: 90%;
 }
+
 h2 {
     margin-bottom: 50px;
     border-bottom: 2px dashed rgb(189, 189, 189);
     font-size: 3em;
 }
+
 h3 {
     line-height: 1;
     font-size: 2em;
     margin-bottom: 10px;
 }
+
 .row {
     display: flex;
     justify-content: space-between;
     position: relative;
     margin-bottom: 100px;
 }
+
 .row:nth-child(2n+1) {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
 }
+
 .row section {
     width: 40%;
     margin-bottom: 100px;
 }
+
 .row figure {
     width: 58%;
     height: 400px;
     padding-top: 10px;
     overflow: hidden;
 }
+
 .row figure img {
     width: auto;
     position: relative;
@@ -133,18 +152,21 @@ h3 {
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
 .intro__slides {
     display: flex;
     justify-content: space-between;
     height: 300px;
     overflow: hidden;
 }
+
 .intro__slides__item {
     width: 300px;
     position: relative;
     overflow: hidden;
     z-index: 0;
 }
+
 .intro__slides__item:nth-child(1) {
     z-index: 2;
     width: 500px;
@@ -153,6 +175,7 @@ h3 {
     top: -100px;
     transform: translate(-50%,0);
 }
+
 .intro__slides__item:nth-child(2) {
     z-index: 1;
     position: absolute;
@@ -161,31 +184,30 @@ h3 {
     height: 300px;
     width: 350px;
 }
-.intro__slides__item:nth-child(3) {
 
-}
 .intro__slides__item:nth-child(4) {
     position: absolute;
     right: 10%;
     height: 250px;
     top: 80px;
 }
-.intro__slides__item:nth-child(5) {
 
-}
 .row .col__fig {
     transition: 1s;
     opacity: 0;
 
 }
+
 .row:nth-of-type(2n-1) .col__fig {
     position: relative;
     left: -100px;
 }
+
 .row:nth-of-type(2n) .col__fig {
     position: relative;
     left: 100px;
 }
+
 .col__txt {
     position: relative;
     top: 100px;
@@ -194,6 +216,7 @@ h3 {
     font-size: 1.1em;
 
 }
+
 .load {
     animation-name: load;
     animation-delay: 0.5s;
@@ -203,6 +226,7 @@ h3 {
     top: 50px;
     position: relative;
 }
+
 @keyframes load {
     0% {
         opacity: 0;
@@ -214,11 +238,13 @@ h3 {
         top: 0;
     }
 }
+
 .slide-l {
     left: 0 !important;
     opacity: 1 !important;
     position: relative;    
 }
+
 .slide-t {
     top: 0 !important;
     opacity: 1 !important;
@@ -226,45 +252,43 @@ h3 {
 }
 
 
-@media screen and (max-width:1400px){
-header {
-
-
-}
-}
 
 @media screen and (max-width:1200px){
-header {
 
-
-}
 h1 {
     font-size: 3em;
 }
+
 .header__introtle  {
     font-size: 6em;
 
 }
+
 .header__introsubtle {
     font-size: 4rem;
 
 }
+
 .row {
     display: block;
 }
+
 .row figure {
     width: 100%;
     margin-bottom: 20px;
     height: 300px;
 }
+
 .row section {
     width: 80%;
     margin: 0 auto 100px;
 
 }
+
 .row:nth-child(2n+1) {
     display: block;
 }
+
 }
 
 
@@ -277,13 +301,18 @@ nav {
 }
 
 }
+
+
+
+
 @media screen and (max-width:400px) {
 .row section {
     width: 95%;
     margin: 0 auto 100px;
-
 }
+
 .row figure {
     height: 250px;
 }
+
 }
